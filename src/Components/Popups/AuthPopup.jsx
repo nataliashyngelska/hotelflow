@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './LoginPopup.css'; // той самий файл стилів
+import './AuthPopup.css'; // той самий файл стилів
 import { FcGoogle } from 'react-icons/fc';
 import { FaFacebookSquare } from 'react-icons/fa';
 import Button from '../Button/Button';
