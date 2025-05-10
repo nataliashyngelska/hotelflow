@@ -1,33 +1,19 @@
 import React, { useState } from 'react';
-import { MdKeyboardArrowDown } from "react-icons/md";
 import './Navbar.css';
-import LoginPopup from '../Popups/LoginPopup';
-import RegPopup from '../Popups/RegPopup';
+import { MdKeyboardArrowDown } from "react-icons/md";
 import { Link } from 'react-router-dom';
+import AuthPopup from '../Popups/AuthPopup';
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [showLogin, setShowLogin] = useState(false);
-  const [showRegister, setShowRegister] = useState(false);
-
-  const openLogin = () => {
-    setShowLogin(true);
-    setShowRegister(false);
-  };
-
-  const openRegister = () => {
-    setShowLogin(false);
-    setShowRegister(true);
-  };
-
-  const closeModals = () => {
-    setShowLogin(false);
-    setShowRegister(false);
-  };
+  const [showAuthPopup, setShowAuthPopup] = useState(false);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
+
+  const openAuthPopup = () => setShowAuthPopup(true);
+  const closeAuthPopup = () => setShowAuthPopup(false);
 
   return (
     <header className="header">
@@ -50,19 +36,9 @@ const Navbar = () => {
           )}
         </div>
 
-        <button className="account-btn" onClick={openLogin}>Profile</button>
+        <button className="account-btn" onClick={openAuthPopup}>Profile</button>
 
-
-        <LoginPopup
-          isOpen={showLogin}
-          onClose={closeModals}
-          onSwitch={openRegister}
-        />
-        <RegPopup
-          isOpen={showRegister}
-          onClose={closeModals}
-          onSwitch={openLogin}
-        />
+        <AuthPopup isOpen={showAuthPopup} onClose={closeAuthPopup} />
       </div>
     </header>
   );

@@ -14,7 +14,7 @@ function Button({ text, to, onClick, className }) {
   };
 
   return (
-    <button className={`btn ${className || ''}`} onClick={handleClick}>
+    <button type='button' className={`btn ${className || ''}`} onClick={handleClick}>
       {text}
     </button>
   );

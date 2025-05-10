@@ -3,9 +3,27 @@ import Navbar from '../Components/Navbar/Navbar'
 import Footer from '../Components/Footer/Footer'
 import BgImg from '../assets/profile-bg.png'
 import Bg from '../Components/Background/Bg'
+import Button from '../Components/Button/Button'
+import { useState, useEffect } from 'react';
+import BookingHistoryModal from '../Components/Popups/BookingHistoryModal'; // шляхи адаптуй під свою структуру
+
 import './Profile.css'
 
 function Profile() {
+
+  const [bookings, setBookings] = useState([]);
+  const [showHistory, setShowHistory] = useState(false);
+
+  useEffect(() => {
+    const savedBookings = JSON.parse(localStorage.getItem('bookings')) || [];
+    setBookings(savedBookings);
+  }, []);
+
+  const openHistory = () => setShowHistory(true);
+  const closeHistory = () => setShowHistory(false);
+
+
+
   return (
    <>
       <Navbar />
@@ -53,6 +71,7 @@ function Profile() {
               <option>Your First Name</option>
             </select>
           </div>
+          
         </div>
 
         <div className="form-row">
@@ -61,6 +80,13 @@ function Profile() {
             <select>
               <option>Your First Name</option>
             </select>
+          </div>
+
+          <div className="form-group">
+            <label>History</label>
+            <Button text={"View History of your Booking"} onClick={openHistory} />
+            <BookingHistoryModal isOpen={showHistory} onClose={closeHistory} bookings={bookings} />
+
           </div>
 
         </div>

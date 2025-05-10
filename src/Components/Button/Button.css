@@ -1,8 +1,9 @@
 .btn{
     border: none;
+    width: auto;
     background-color: #34A0A4;
     color: white;
-    padding: 5px 30px;
+    padding: 10px 30px;
     border-radius: 20px;
     font-size: 16px;
     letter-spacing: 1px;
