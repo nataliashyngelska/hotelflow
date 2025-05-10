@@ -1,0 +1,72 @@
+.excursion {
+    margin: 90px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .excursion h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #121212;
+    text-align: center;
+  }
+  
+  .excursion-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 24px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .exc-card {
+    width: 270px;
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s;
+  }
+  
+  .exc-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .exc-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .exc-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 12px 0 8px;
+    color: #1f1f1f;
+  }
+  
+  .date {
+    color: #555;
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  
+  .exc-divider {
+    height: 1px;
+    background-color: #ddd;
+    margin: 10px 0;
+    width: 100%;
+  }
+  
+  .exc-card .price {
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: auto;
+    color: #2c2c2c;
+  }

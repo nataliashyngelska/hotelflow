@@ -1,0 +1,106 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
+    /*background: navy;*/
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300;
+    margin-left: 40px;
+    letter-spacing: 1px;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    opacity: 20%;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+
+}
+
+
+.dropdown-btn{
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+   
+}
+
+  .account-btn{
+    background-color: #34A0A4;
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  .btns{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background-color: #fff;
+    min-width: 80px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 999;
+  }
+  
+  .dropdown-content a {
+    color: #333;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f0f0f0;
+  }
+  

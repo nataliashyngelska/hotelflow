@@ -1,0 +1,137 @@
+
+
+.booking-strip {
+  border-color: rgba(0, 0, 0, 0.16);
+  border-bottom-width: 1px;
+  display: flex;
+  padding: 91px 0;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.booking-item {
+  border-radius: 100px;
+  align-self: stretch;
+  display: flex;
+  margin: auto 0;
+  padding: 8px 24px;
+  align-items: center;
+  gap: 12px;
+  justify-content: flex-start;
+  width: 240px;
+}
+
+
+
+.icon-container {
+  align-self: stretch;
+  display: flex;
+  margin: auto 0;
+  padding: 2px;
+  align-items: flex-start;
+  gap: 8px;
+  overflow: hidden;
+  justify-content: flex-start;
+  width: 24px;
+}
+
+.icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 24px;
+  align-self: stretch;
+  margin: auto 0;
+  flex-shrink: 0;
+}
+
+.check-in-container .icon {
+  width: 20px;
+  fill: #34a0a4;
+}
+
+.booking-detail {
+  align-self: stretch;
+  margin: auto 0;
+  font-family: 'DM Sans', -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.label {
+  color: #525252;
+  font-size: 13px;
+  display: block;
+}
+
+.date, .people-count {
+  color: rgba(84, 84, 84, 0.795);
+  font-size: 16px;
+  display: block;
+}
+
+.divider {
+  border-color: rgba(71, 71, 71, 0.16);
+  border-style: solid;
+  border-width: 1px;
+  align-self: stretch;
+  margin: auto 0;
+  width: 0px;
+  flex-shrink: 0;
+  height: 40px;
+}
+
+.search-button {
+  align-items: center;
+  border-radius: 64px;
+  box-shadow: 0px 138px 39px rgba(0, 0, 0, 0),
+              0px 89px 35px rgba(0, 0, 0, 0.01),
+              0px 50px 30px rgba(0, 0, 0, 0.05),
+              0px 22px 22px rgba(0, 0, 0, 0.09),
+              0px 6px 12px rgba(0, 0, 0, 0.1),
+              0px 0px 0px rgba(0, 0, 0, 0.1);
+  align-self: stretch;
+  display: flex;
+  margin: auto 0;
+  min-height: 56px;
+  padding: 0 24px;
+  gap: 8px;
+  font-family: 'DM Sans', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1;
+  justify-content: flex-start;
+  background-color: #34a0a4;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+.search-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 24px;
+  align-self: stretch;
+  margin: auto 0;
+  flex-shrink: 0;
+}
+
+.search-text {
+  align-self: stretch;
+  margin: auto 0;
+}
+
+
+input{
+  border: none;
+  background-color: #fff;
+  
+}
+
+.nights-info{
+  margin-left: 5px;
+}

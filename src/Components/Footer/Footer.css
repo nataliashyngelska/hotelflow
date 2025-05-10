@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+.footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 15%;
+    letter-spacing: 1px;
+    background: rgb(0, 0, 0);
+    z-index: 10;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+
+.section-title{
+    color: white;
+    font-size: 20px;
+}
+
+.section-list{
+    margin: 20px 0;
+}
+
+.section-list a{
+    color: white;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+ul {
+    line-height: 30px; 
+}
+
+.footer-divider{
+    height: 1px;
+    width: 100%;
+    background-color: rgba(56, 53, 53, 0.795);
+}
+
+.copyright{
+    color: rgba(84, 84, 84, 0.795);
+    font-size: 15px;
+    margin-top: 25px;
+    align-self: center;
+}
+
+.logo{
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+ 
+}
+
+.media-icons{
+    color: white;
+    font-size: 32px;
+    display: flex;
+    gap: 24px;
+    margin-top: 20px;
+}
