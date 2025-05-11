@@ -5,12 +5,8 @@ import { Link } from 'react-router-dom';
 import AuthPopup from '../Popups/AuthPopup';
 
 const Navbar = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [showAuthPopup, setShowAuthPopup] = useState(false);
 
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
 
   const openAuthPopup = () => setShowAuthPopup(true);
   const closeAuthPopup = () => setShowAuthPopup(false);
@@ -27,14 +23,6 @@ const Navbar = () => {
       </nav>
 
       <div className="btns">
-        <div className="dropdown">
-          <button className="dropdown-btn" onClick={toggleDropdown}>Ua <MdKeyboardArrowDown /></button>
-          {isDropdownOpen && (
-            <div className="dropdown-content">
-              <a href="#">En</a>
-            </div>
-          )}
-        </div>
 
         <button className="account-btn" onClick={openAuthPopup}>Profile</button>
 

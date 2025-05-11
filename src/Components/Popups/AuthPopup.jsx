@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './AuthPopup.css'; // той самий файл стилів
+import './AuthPopup.css'; 
 import { FcGoogle } from 'react-icons/fc';
 import { FaFacebookSquare } from 'react-icons/fa';
 import Button from '../Button/Button';
@@ -22,10 +22,7 @@ const AuthPopup = ({ isOpen, onClose }) => {
     e.preventDefault();
 
     if (isLogin) {
-      console.log('Login with', {
-        email: form.email,
-        password: form.password
-      });
+      alert('Login');
     } else {
       if (form.password !== form.confirmPassword) {
         alert('Passwords do not match');

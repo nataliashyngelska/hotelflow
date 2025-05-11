@@ -5,7 +5,7 @@ import BgImg from '../assets/profile-bg.png'
 import Bg from '../Components/Background/Bg'
 import Button from '../Components/Button/Button'
 import { useState, useEffect } from 'react';
-import BookingHistoryModal from '../Components/Popups/BookingHistoryModal'; // шляхи адаптуй під свою структуру
+import BookingHistoryModal from '../Components/Popups/BookingHistoryModal'; 
 
 import './Profile.css'
 
@@ -36,7 +36,7 @@ function Profile() {
       <div className="profile-wrapper">
         <div className="user-info">
         <div className="user-left">
-          <img src="https://via.placeholder.com/80" alt="avatar" className="avatar" />
+          <img src="../assets/user.webp" alt="avatar" className="avatar" />
           <div>
             <h3>Username</h3>
             <p>alexarawles@gmail.com</p>

@@ -7,7 +7,10 @@ import Exc1 from '../assets/exc1.png'
 import Exc2 from '../assets/exc2.png'
 import Exc3 from '../assets/exc3.png'
 import Exc4 from '../assets/exc4.png'
+import Ev1 from '../assets/event1.png'
+import Ev2 from '../assets/event2.png'
 import './Entertainment.css'
+import EventCard from '../Components/Events/EventCard';
 
 function Entertainment() {
   return (
@@ -62,6 +65,25 @@ function Entertainment() {
       </div>
 
     </section>
+
+<div>
+      <h1 style={{ textAlign: 'center' }}>FOR TODAY EVENTS!</h1>
+      <p style={{ textAlign: 'center' }}>Spend the best days on our days!</p>
+
+      <EventCard
+        image={Ev1}
+        title="Tomorrowland Beach"
+        description="I actually don't like hotels and events and those people that make me sick"
+        date="10 Jun 2024"
+      />
+      <EventCard
+        image={Ev2}
+        title="World Tropical"
+        description="Please stop doing this to me, I can't even go outside for 15 minutes."
+        date="10 Sep 2024"
+        reverse
+      />
+    </div>
 
     <Footer /> 
   </>
