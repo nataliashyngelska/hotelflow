@@ -1,0 +1,120 @@
+.booking-details-form {
+    padding: 40px;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .have-account,
+  .booking-details,
+  .prepayment {
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    background-color: #fff;
+  }
+  
+  .modal-image h2 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.2s;
+  }
+  
+  input:focus {
+    border-color: #4a90e2;
+    outline: none;
+    background-color: #f0f8ff;
+  }
+  
+  .form-group {
+    margin-bottom: 25px;
+  }
+  
+  .forgot-pass {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    color: #777;
+  }
+  
+  .forgot-pass p {
+    margin: 0;
+    cursor: pointer;
+  }
+  
+
+  
+
+  
+.booking-title{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.booking-content{
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  gap: 50px;
+
+}
+
+.selected-room {
+  width: 390px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin-top: 24px;
+}
+
+.selected-room img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.selected-room .modal-title {
+  font-size: 1.5rem;
+  margin: 0 0 8px 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.selected-room .modal-desc {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.selected-room .modal-text {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
